@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<button onclick="multiplication()">Click to start</button>
+</body>
+</html>
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+</table>
+<script>
+    function multiplication() {
+        document.write('<table border="1" cellspacing="0" width="500px" height="500px" vertical-align="middle">');
+        for (let i = 1; i <= 10; i++) {
+            document.write('<tr>')
+            for (let j = 1; j <= 10; j++) {
+                document.write('<td style="text-align: center">' + (i * j) + '</td>');
+                // document.write(i * j);
+                // document.write('</td>');
+            }
+            document.write('</tr>')
+        }
+        document.write('</table>');
+    }
+</script>
